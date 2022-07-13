@@ -35,7 +35,8 @@ separadas em classes, e faça com que os objetos dessas classes sejam intercambi
  2. Abra o projeto na IDE de sua preferência.
 
 ## Créditos
-
+- https://refactoring.guru/design-patterns
+- https://tinyurl.com/2p9f795f
 ## Licença
 
 Distribuído sob a licença do MIT. Consulte `LICENSE` para obter mais informações.
