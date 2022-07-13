@@ -37,6 +37,7 @@ separadas em classes, e faça com que os objetos dessas classes sejam intercambi
 ## Créditos
 - https://refactoring.guru/design-patterns
 - https://tinyurl.com/2p9f795f
+- https://amzn.to/3ceYsRG
 ## Licença
 
 Distribuído sob a licença do MIT. Consulte `LICENSE` para obter mais informações.
