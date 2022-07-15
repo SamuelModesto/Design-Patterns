@@ -1,6 +1,6 @@
 <br />
-<p align="center">
-  <h3 align="center">STRATEGY</h3>
+<p >
+  <h1> STRATEGY</h1>
 </p>
 
 <!-- TABLE OF CONTENTS -->
