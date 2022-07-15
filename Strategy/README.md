@@ -9,11 +9,14 @@
 
 - [Propósito](#Propósito)
 - [Explicação](#Explicação)
-  -[Cenário](#Cenário-de-aplicação)
-- [Diagrama de classe](#Diagrama-de-classe)
+  - [Cenário](#Cenário-De-Aplicação)
+  - [Resumo](#Resumo)
+  - [Wikipedia](#Wikipedia)
+  - [Exemplo de Código](#Exemplo-de-código)
+- [Diagrama de Classe](#Diagrama-de-Classe)
 
 - [Quando Usar](#Quando-Usar)
-- [Como usar](#Como-usar)
+- [Como Usar](#Como-Usar)
 - [Créditos](#Créditos)
 - [Licença](#Licença)
 - [Contato](#Contato)
@@ -24,6 +27,9 @@ separadas em classes, e faça com que os objetos dessas classes sejam intercambi
 
 ## Explicação
 ### Cenário de aplicação
+### Resumo
+### Wikipedia
+### Exemplo de código
 
 ## Diagrama de classe
 
