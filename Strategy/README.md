@@ -8,7 +8,8 @@
 ## Conteúdo
 
 - [Propósito](#Propósito)
-  - [Explicação](#Explicação)
+- [Explicação](#Explicação)
+  -[Cenário](#Cenário-de-aplicação)
 - [Diagrama de classe](#Diagrama-de-classe)
 
 - [Quando Usar](#Quando-Usar)
@@ -21,7 +22,8 @@
 O Strategy é um padrão de projeto comportamental que permite que você defina uma família de algoritmos, 
 separadas em classes, e faça com que os objetos dessas classes sejam intercambiáveis.
 
-### Explicação
+## Explicação
+### Cenário de aplicação
 
 ## Diagrama de classe
 
