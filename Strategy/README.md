@@ -45,7 +45,76 @@ O padrão de estratégia permite escolher o algoritmo mais adequado em tempo de 
 O padrão é aplicado em situações em que muitas classes se relacionam e diferem apenas no modo de atuação, com isso o Strategy irá configurar a classe que tenha um dentre muitos comportamentos fornecidos.
 
 ### Exemplo de código
+Primeiramente deve ser criada a interface de implementação com o método que deverá assumir diferentes comportamentos.
+```java 
+public interface EstrategiaDeAtaque {
+    void atacar();
+}
+```
+Em seguida deve ser implementado a interface nas classes que assumirão diferentes comportamentos:
 
+Classe 1
+```java 
+public class AtaqueComEspada implements EstrategiaDeAtaque {
+    @Override
+    public void atacar() {
+        System.out.println("O guerreiro saca a espada de prata e ataca cortando o inimigo que possui fraqueza " +
+        "quando atacado armas de prata!");
+    }
+}
+```
+Classe 2
+```java 
+public class AtaqueComFlechasEnvenenadas implements EstrategiaDeAtaque {
+    @Override
+    public void atacar() {
+        System.out.println("O guerreiro atira flechas envenanadas com veneno de alho que derrotam facilmente o inimigo");
+    }
+}
+```
+Classe 3
+```java 
+public class AtaqueComFogo implements EstrategiaDeAtaque {
+    @Override
+    public void atacar() {
+        System.out.println("O guerreiro atira um pequeno jarro de óleo no inimigo e com uma tocha queima o mosntro!");
+    }
+}
+```
+Em seguida vamos implementar a classe Guerreiro, que pode escolher a estratégia de combate de acordo com o inimigo.
+```java
+public class Guerreiro {
+    public void executarAtaque(EstrategiaDeAtaque estrategiaDeAtaque) {
+        estrategiaDeAtaque.atacar();
+    }
+}
+```
+Finalmente podemos ver o guerreiro em ação
+
+```java
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Um lycan apareceu!");
+        Guerreiro guerreiro = new Guerreiro();
+        guerreiro.executarAtaque(new AtaqueComEspada());
+        System.out.println("Um Monstro de gelo apareceu!");
+        guerreiro.executarAtaque(new AtaqueComFogo());
+        System.out.println("Um Vampiro apareceu!");
+        guerreiro.executarAtaque(new AtaqueComFlechasEnvenenadas()); 
+
+    }
+}
+```
+
+Saída no console
+```
+Um lycan apareceu!
+O guerreiro saca a espada de prata e ataca cortando o inimigo que possui fraqueza quando atacado armas de prata!
+Um Monstro de gelo apareceu!
+O guerreiro atira um pequeno jarro de óleo no inimigo e com uma tocha queima o mosntro!
+Um Vampiro apareceu!
+O guerreiro atira flechas envenanadas com veneno de alho que derrotam facilmente o inimigo
+```
 ## Diagrama de classe
 
 
