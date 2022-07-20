@@ -33,27 +33,38 @@ O Strategy é um padrão de projeto comportamental que permite que você defina 
 separadas em classes, e faça com que os objetos dessas classes sejam intercambiáveis.
 
 ## Explicação
+
 ### Cenário de aplicação
+Enfrentar criaturas mitológicas é uma tarefa extremamente difícil e por isso os guerreiros desenvolveram diferentes estratégias de combate para enfrentar
+os maiores inimigos.
+
 ### Resumo
+O padrão de estratégia permite escolher o algoritmo mais adequado em tempo de execução.
+
 ### Wikipedia
+O padrão é aplicado em situações em que muitas classes se relacionam e diferem apenas no modo de atuação, com isso o Strategy irá configurar a classe que tenha um dentre muitos comportamentos fornecidos.
+
 ### Exemplo de código
 
 ## Diagrama de classe
 
 
-
-
 ## Quando Usar
-
+- Quando muitas classes relacionadas diferem apenas em seu comportamento. As estratégias fornecem uma maneira de configurar uma classe com um dos muitos comportamentos
+- Quando Você precisa de diferentes variantes de um algoritmo. por exemplo, você pode definir algoritmos que reflitam diferentes compensações de espaço/tempo.
+- Quando um algoritmo usa dados que os clientes não deveriam conhecer. Use o padrão Strategy para evitar a exposição de estruturas de dados complexas específicas de algoritmos.
+- Uma classe define muitos comportamentos, e estes aparecem como várias instruções condicionais em suas operações. Em vez de muitas condicionais, abstraia as   condicionais para a sua própria classe de estratégia.
 
 ## Como Executar
  1. Baixe o projeto.
  2. Abra o projeto na IDE de sua preferência.
+ 3. Execute a classe App
 
 ## Créditos
 - https://refactoring.guru/design-patterns
 - https://tinyurl.com/2p9f795f
 - https://amzn.to/3ceYsRG
+- https://pt.wikipedia.org/wiki/Strategy
 ## Licença
 
 Distribuído sob a licença do MIT. Consulte `LICENSE` para obter mais informações.
