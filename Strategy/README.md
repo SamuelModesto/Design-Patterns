@@ -117,6 +117,12 @@ O guerreiro atira flechas envenanadas com veneno de alho que derrotam facilmente
 ```
 ## Diagrama de classe
 
+<p align="center">
+  <a href="https://github.com/SamuelModesto">
+      <img alt="Minerva" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/padroes%20de%20projeto%20Class%20diagram.png" />
+  </a>
+</p>
+
 
 ## Quando Usar
 - Quando muitas classes relacionadas diferem apenas em seu comportamento. As estratégias fornecem uma maneira de configurar uma classe com um dos muitos comportamentos
