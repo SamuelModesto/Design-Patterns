@@ -1,7 +1,9 @@
 <br />
 <p >
   <h1> STRATEGY</h1>
+  
 </p>
+
 
 <!-- TABLE OF CONTENTS -->
 
@@ -22,6 +24,11 @@
 - [Contato](#Contato)
 
 ## Propósito
+|  Nome           | Categoria    | Tag        |  
+| :-------------  | :----------- | :--------- |
+| `Strategy`      |  Comportamental | Gang Of Four (GOF)|
+
+
 O Strategy é um padrão de projeto comportamental que permite que você defina uma família de algoritmos, 
 separadas em classes, e faça com que os objetos dessas classes sejam intercambiáveis.
 
@@ -32,6 +39,7 @@ separadas em classes, e faça com que os objetos dessas classes sejam intercambi
 ### Exemplo de código
 
 ## Diagrama de classe
+
 
 
 
