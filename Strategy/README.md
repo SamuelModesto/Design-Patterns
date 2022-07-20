@@ -26,7 +26,7 @@
 ## Propósito
 |  Nome           | Categoria    | Tag        |  
 | :-------------  | :----------- | :--------- |
-| `Strategy`      |  Comportamental | Gang Of Four (GOF)|
+| Strategy      |  Comportamental | `Gang Of Four (GOF)`|
 
 
 O Strategy é um padrão de projeto comportamental que permite que você defina uma família de algoritmos, 
