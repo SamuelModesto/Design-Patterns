@@ -77,7 +77,7 @@ Classe 3
 public class AtaqueComFogo implements EstrategiaDeAtaque {
     @Override
     public void atacar() {
-        System.out.println("O guerreiro atira um pequeno jarro de óleo no inimigo e com uma tocha queima o mosntro!");
+        System.out.println("O guerreiro atira um pequeno jarro de óleo no inimigo e com uma tocha queima o monstro!");
     }
 }
 ```
