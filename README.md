@@ -18,6 +18,6 @@
 </p>
 <p align="center">
  Minerva era a deusa romana da sabedoria e do conhecimento.
- Este projeto tem como objetivo criar uma base de conhecimento e apresentar os padroes de projetos aplicados na linguagem JAVA.
+ Este projeto tem como objetivo criar uma base de conhecimento e apresentar os padrões de projetos aplicados na linguagem JAVA.
 </p>
 
