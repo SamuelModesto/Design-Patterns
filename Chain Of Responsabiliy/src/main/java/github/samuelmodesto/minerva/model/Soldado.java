@@ -10,8 +10,10 @@ public class Soldado extends PergaminhoDeOrdem {
 
     @Override
     public void enviarOrdem(Ordem ordem) {
-        if (ordem.getTipoDeOrdem().equals(TipoDeOrdem.COBRAR_IMPOSTOS)){
+        if (ordem.getTipoDeOrdem().equals(TipoDeOrdem.COBRAR_IMPOSTOS)) {
             System.out.println("soldado cumprindo a ordem de cobrar os impostos.");
+        } else {
+            proximo.enviarOrdem(ordem);
         }
     }
 }
