@@ -8,6 +8,6 @@ public class SemOrdem extends PergaminhoDeOrdem {
 
     @Override
     public void enviarOrdem(Ordem ordem) {
-
+        System.out.println("Fim da cadeia de responsabilidade");
     }
 }
