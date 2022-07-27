@@ -26,15 +26,18 @@ O Chain of Responsibility é um padrão de projeto que permite que você passe s
 
 ## Explicação
 ### Cenário de aplicação
-A Rainha Daenerys dá ordens ao comandante de seu exército dos imaculados que pode executar ou pedir para um oficial mais proximo que por sua vez também pode executar ou ordenar que um soldado raso execute o trabalho. O comandante, o oficial e o soldado raso representam a cadeia de responsabilidade.
+A Rainha Daenerys escreve ordens em um pergaminho para o comandante do seu exército dos imaculados, que pode executar ele mesmo ou pedir para um oficial mais proximo que por sua vez também pode executar ou ordenar que um soldado raso execute o trabalho. O comandante, o oficial e o soldado raso representam a cadeia de responsabilidade.
 ### Resumo
 Esse padrão ajuda a construir uma cadeia de objetos. Uma solicitação entra de um lado e continua indo de um objeto para outro até encontrar um manipulador adequado.
 ### Wikipedia
 ### Exemplo de código
 
 ## Diagrama de classe
-
-
+<p align="center">
+  <a href="https://github.com/SamuelModesto">
+      <img alt="chain-of-responsability" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/chain-of-responsability.png" />
+  </a>
+</p>
 
 ## Quando Usar
 
