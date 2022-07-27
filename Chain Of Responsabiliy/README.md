@@ -33,8 +33,11 @@ Esse padrão ajuda a construir uma cadeia de objetos. Uma solicitação entra de
 ### Exemplo de código
 
 ## Diagrama de classe
-
-
+<p align="center">
+  <a href="https://github.com/SamuelModesto">
+      <img alt="chain-of-responsability" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/chain-of-responsability.png" />
+  </a>
+</p>
 
 ## Quando Usar
 
