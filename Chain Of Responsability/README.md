@@ -30,6 +30,7 @@ A Rainha Daenerys escreve ordens em um pergaminho para o comandante do seu exér
 ### Resumo
 Esse padrão ajuda a construir uma cadeia de objetos. Uma solicitação entra de um lado e continua indo de um objeto para outro até encontrar um manipulador adequado.
 ### Wikipedia
+No projeto orientado a objetos, o padrão de cadeia de responsabilidade é um padrão de projeto comportamental que consiste em uma fonte de objetos de comando e uma série de objetos de processamento. Cada objeto de processamento contém uma lógica que define os tipos de objetos de comando que ele pode manipular, o restante é passado para o próximo objeto de processamento na cadeia.
 ### Exemplo de código
 
 ## Diagrama de classe
@@ -40,7 +41,9 @@ Esse padrão ajuda a construir uma cadeia de objetos. Uma solicitação entra de
 </p>
 
 ## Quando Usar
-
+  - Mais de um objeto pode manipular uma solicitação e o manipulador não é conhecido. O manipulador deve ser verificado automaticamente.
+  - Você deseja enviar uma solicitação para um dos vários objetos sem especificar o objeto receptor explicitamente.
+  - O conjunto de objetos que podem manipular uma solicitação precisa ser especificado dinamicamente.
 
 ## Como Executar
  1. Baixe o projeto.

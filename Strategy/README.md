@@ -119,7 +119,7 @@ O guerreiro atira flechas envenanadas com veneno de alho que derrotam facilmente
 
 <p align="center">
   <a href="https://github.com/SamuelModesto">
-      <img alt="Minerva" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/padroes%20de%20projeto%20Class%20diagram.png" />
+      <img alt="Minerva" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/strategy.png" />
   </a>
 </p>
 
