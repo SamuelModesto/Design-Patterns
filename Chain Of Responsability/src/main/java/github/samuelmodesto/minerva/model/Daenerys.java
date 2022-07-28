@@ -13,5 +13,4 @@ public class Daenerys {
                 );
         pergaminho.enviarOrdem(ordem);
     }
-
 }

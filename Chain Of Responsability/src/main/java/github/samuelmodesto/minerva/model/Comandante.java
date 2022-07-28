@@ -11,7 +11,7 @@ public class Comandante extends PergaminhoDeOrdem {
     @Override
     public void enviarOrdem(Ordem ordem) {
         if (ordem.getTipoDeOrdem().equals(TipoDeOrdem.ATACAR)) {
-            System.out.println("Oficial cumprindo a ordem de atacar.");
+            System.out.println("Comandante cumprindo a ordem de atacar.");
         } else {
             proximo.enviarOrdem(ordem);
         }
