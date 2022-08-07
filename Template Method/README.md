@@ -28,17 +28,21 @@
 |:------------------| :----------- | :--------- |
 | `Template Method` |  Comportamental | Gang Of Four (GOF)|
 
+O Template Method é um padrão de projeto comportamental que permite definir o esqueleto de um algoritmo em uma classe base e delegar para as subclasses outras etapas sem alterar a estrutura geral do algoritmo.
 
 
 ## Explicação
 ### Cenário de aplicação
+
 ### Resumo
+O padrão Template Method descreve as etapas gerais em uma classe pai e permite que as implementações filhas concretas definam os detalhes.
+
 ### Wikipedia
+O método template é um método em uma superclasse, geralmente uma superclasse abstrata, e define o esqueleto de uma operação em termos de várias etapas de alto nível. Essas etapas são implementadas por métodos auxiliares adicionais na mesma classe que o método de modelo .
+
 ### Exemplo de código
 
 ## Diagrama de classe
-
-
 
 
 ## Quando Usar
