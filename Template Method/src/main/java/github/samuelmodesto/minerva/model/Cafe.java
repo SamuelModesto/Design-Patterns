@@ -1,22 +1,25 @@
 package github.samuelmodesto.minerva.model;
 
-public abstract class CafeTemplate {
+public abstract class Cafe {
 
-    public void prepararCafe(){
+    public void prepararCafeTemplate() {
         ferverAgua();
         adicionarLeite();
         adicionarAcucar();
         adicionarTipoCafe();
     }
 
-    protected void ferverAgua(){
+    private void ferverAgua() {
         System.out.println("Agua fervida!");
     }
-    protected void adicionarLeite(){
+
+    private void adicionarLeite() {
         System.out.println("Leite adicionado");
     }
-    protected void adicionarAcucar() {
+
+    private void adicionarAcucar() {
         System.out.println("Açucar adicionado");
     }
+
     protected abstract void adicionarTipoCafe();
 }

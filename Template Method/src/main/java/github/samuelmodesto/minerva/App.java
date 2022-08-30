@@ -7,12 +7,12 @@ public class App {
     public static void main(String[] args) {
         System.out.println("PREPARO DO CAFÉ TRÊS CORAÇÕES");
         TresCoracoes tresCoracoes = new TresCoracoes();
-        tresCoracoes.prepararCafe();
+        tresCoracoes.prepararCafeTemplate();
 
         System.out.println("\n\n");
 
         System.out.println("PREPARO DO NESCAFÉ");
         Nescafe nescafe = new Nescafe();
-        nescafe.prepararCafe();
+        nescafe.prepararCafeTemplate();
     }
 }

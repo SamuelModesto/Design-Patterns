@@ -1,10 +1,10 @@
 package github.samuelmodesto.minerva.model;
 
-public class Nescafe extends CafeTemplate{
+public class Nescafe extends Cafe {
     @Override
     protected void adicionarTipoCafe() {
         System.out.println("Nescafé adicionado");
-        System.out.println("####################");
+        System.out.println("##########################");
         System.out.println("          {\n" +
                 "       }   }   {\n" +
                 "      {   {  }  }\n" +

@@ -1,6 +1,6 @@
 package github.samuelmodesto.minerva.model;
 
-public class TresCoracoes extends CafeTemplate{
+public class TresCoracoes extends Cafe {
     @Override
     protected void adicionarTipoCafe() {
         System.out.println("Três Corações Adicionado!");
