@@ -33,6 +33,8 @@ O Template Method é um padrão de projeto comportamental que permite definir o 
 
 ## Explicação
 ### Cenário de aplicação
+Suponha que queremos preparar um café da marca Três Corações, para isso é preciso seguir alguns passos como: ferver a água, adicionar leite, adicionar açucar e adicionar o café três corações. Agora queremos preparar um café porém da marca Nescafé, para realizar o preparo, também é necessário seguir os mesmos passos do café Três Corações como:
+ferver a água, adicionar leite, adicionar açucar e adicionar o Nescafé. O processo de preparo é quase o mesmo ou seja: ferver a água, adicionar leite, adicionar açucar e adicionar o tipo de café (Três Corações ou Nescafé) e com base no café escolhido ele criará o Café Nescafé ou o Café Três Corações. Portanto, como sugere o padrão Template Method, podemos criar uma etapa comum do processo em uma super classe de preparo do café e delegar a parte específica deste preparo para as subclasses.
 
 ### Resumo
 O padrão Template Method descreve as etapas gerais em uma classe pai e permite que as implementações filhas concretas definam os detalhes.
