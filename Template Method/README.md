@@ -208,9 +208,16 @@ Nescafé adicionado
 ```
 
 ## Diagrama de classe
+<p align="center">
+  <a href="https://github.com/SamuelModesto">
+      <img alt="template-method" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/template-method.png" />
+  </a>
+</p>
 
 
 ## Quando Usar
+- Quando precisamos que as subclasses estendam apenas etapas particulares de um algoritmo, mas não todo o algoritmo e sua estrutura.
+- Quando precisamos ter várias classes que contém algoritmos quase idênticos com algumas pequenas diferenças. Como resultado, temos um ganho de isolamento e modularização de código.
 
 
 ## Como Executar
