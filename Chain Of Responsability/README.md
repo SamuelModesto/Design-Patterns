@@ -16,7 +16,6 @@
 - [Diagrama de Classe](#Diagrama-de-Classe)
 
 - [Quando Usar](#Quando-Usar)
-- [Como Usar](#Como-Usar)
 - [Créditos](#Créditos)
 - [Licença](#Licença)
 - [Contato](#Contato)
