@@ -223,7 +223,7 @@ Nescafé adicionado
 ## Como Executar
  1. Baixe o projeto.
  2. Abra o projeto na IDE de sua preferência.
- 3. Execute a classe App
+ 3. Execute a classe "App" de qualquer padrão de projeto.
 
 ## Créditos
 - https://refactoring.guru/design-patterns
