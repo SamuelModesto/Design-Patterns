@@ -58,6 +58,8 @@ Em certas ocasiões, quando o contexto em que está a desenvolver requer um obje
 
 
 ## Quando Usar
+- Quando você tem um objeto que se comporta de maneira diferente dependendo do seu estado atual e quando o código estado específico muda com frequência.
+- Quando você tem uma classe com muitas condicionais que alteram o comportamento da classe  de acordo com os valores atuais do objeto.
 
 ## Como Executar
  1. Baixe o projeto.
