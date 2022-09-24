@@ -3,7 +3,7 @@ package github.samuelmodesto.minerva.model;
 import java.math.BigDecimal;
 
 public class Reprovado extends StatusPedido {
-
+    @Override
     public BigDecimal calcularDesconto(Pedido pedido) {
         return BigDecimal.ZERO;
     }
