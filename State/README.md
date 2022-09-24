@@ -26,14 +26,17 @@
 |:--------| :----------- | :--------- |
 | `State` |  Comportamental | Gang Of Four (GOF)|
 
-O Template Method é um padrão de projeto comportamental que permite definir o esqueleto de um algoritmo em uma classe base e delegar para as subclasses outras etapas sem alterar a estrutura geral do algoritmo.
+Possibiitar que um objeto mude de comportamento de acordo com seu estado interno. Tomando a forma de outro objeto ou seja se parece com um novo objeto de uma outra classe.
 
 ## Explicação
 ### Cenário de aplicação
+Em uma calculadora de desconto de uma loja virtual, o pedido tem alguns estados ( ANALISE, APROVADO, REPROVADO, FINALIZADO) e dependendo desse estado, a calculadora aplica diferentes percentuais de descontos.
 
 ### Resumo
-
+ O padrão state permite que um objeto altere o seu comportamento quando o seu estado interno muda.
+ 
 ### Wikipedia
+Em certas ocasiões, quando o contexto em que está a desenvolver requer um objeto que possua comportamentos diferentes dependendo de qual estado se encontra, é difícil manejar a mudança de comportamento e os estados desse objeto, tudo dentro do mesmo bloco de código. O padrão State propõe uma solução para esta complicação, criando basicamente, um objeto para cada estado possível do objeto que o chama.
 
 ### Exemplo de código
 
@@ -59,7 +62,7 @@ O Template Method é um padrão de projeto comportamental que permite definir o 
 ## Como Executar
  1. Baixe o projeto.
  2. Abra o projeto na IDE de sua preferência.
- 3. Execute a classe App
+ 3. Execute a classe "App" de qualquer padrão de projeto.
 
 ## Créditos
 - https://refactoring.guru/design-patterns
