@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PedidoTest {
 
     @Test
-    public void verificaSeFoiDescontadoDezPorcentoDoPedido(){
+    public void verificaSeFoiDescontadoDezPorcentoDoPedido() {
         Pedido pedido = new Pedido(new BigDecimal("1000"));
         pedido.verificarDescontosDoPedido();
         BigDecimal valor = pedido.getValorPedido();
@@ -17,7 +17,7 @@ public class PedidoTest {
     }
 
     @Test
-    public void verificaSeFoiDescontadoDoisPorcentoDoPedido(){
+    public void verificaSeFoiDescontadoDoisPorcentoDoPedido() {
         Pedido pedido = new Pedido(new BigDecimal("1000"));
         pedido.setStatus(new Aprovado());
         pedido.verificarDescontosDoPedido();
@@ -26,7 +26,7 @@ public class PedidoTest {
     }
 
     @Test
-    public void verificaSeFoiDescontadoZeroPorcentoDoPedidoParaStatusReprovado(){
+    public void verificaSeFoiDescontadoZeroPorcentoDoPedidoParaStatusReprovado() {
         Pedido pedido = new Pedido(new BigDecimal("1000"));
         pedido.setStatus(new Reprovado());
         pedido.verificarDescontosDoPedido();
@@ -35,14 +35,11 @@ public class PedidoTest {
     }
 
     @Test
-    public void verificaSeFoiDescontadoZeroPorcentoDoPedidoParaStatusFinalizado(){
+    public void verificaSeFoiDescontadoZeroPorcentoDoPedidoParaStatusFinalizado() {
         Pedido pedido = new Pedido(new BigDecimal("1000"));
         pedido.setStatus(new Finalizado());
         pedido.verificarDescontosDoPedido();
         BigDecimal valor = pedido.getValorPedido();
         assertEquals(valor, new BigDecimal("1000.00"));
     }
-
-
-
 }
