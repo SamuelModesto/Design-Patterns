@@ -1,11 +1,6 @@
 
-<p align="center">
-  <a href="https://github.com/SamuelModesto">
-      <img alt="Minerva" src="https://st2.depositphotos.com/1006018/12187/v/450/depositphotos_121871878-stock-illustration-minerva-head-side-silhouette-retro.jpg" />
-  </a>
-</p>
 <h1 align="center">
-  Minerva
+  Java Design Patterns
 </h1>
 
 <p align="center">
@@ -17,7 +12,7 @@
   </strong>
 </p>
 <p align="center">
- Minerva era a deusa romana da sabedoria e do conhecimento.
  Este projeto tem como objetivo criar uma base de conhecimento e apresentar os padrões de projetos aplicados na linguagem JAVA.
+ Cada pasta conta com o nome do padrão de projeto para facilitar os estudos e detalhar o uso do padrão que está sendo estudado. Além disso é possível executar cada padrão de projeto separadamente e verificar o seu comportamento.
 </p>
 
