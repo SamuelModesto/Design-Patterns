@@ -14,8 +14,9 @@
   - [Cenário](#Cenário-De-Aplicação)
   - [Resumo](#Resumo)
   - [Wikipedia](#Wikipedia)
+  - [Diagrama de Classe](#Diagrama-de-Classe)
   - [Exemplo de Código](#Exemplo-de-código)
-- [Diagrama de Classe](#Diagrama-de-Classe)
+
 
 - [Quando Usar](#Quando-Usar)
 - [Créditos](#Créditos)
@@ -42,6 +43,13 @@ O padrão de estratégia permite escolher o algoritmo mais adequado em tempo de 
 
 ### Wikipedia
 O padrão é aplicado em situações em que muitas classes se relacionam e diferem apenas no modo de atuação, com isso o Strategy irá configurar a classe que tenha um dentre muitos comportamentos fornecidos.
+
+### Diagrama de classe
+<p align="center">
+  <a href="https://github.com/SamuelModesto">
+      <img alt="Minerva" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/strategy.png" />
+  </a>
+</p>
 
 ### Exemplo de código
 Primeiramente deve ser criada a interface de implementação com o método que deverá assumir diferentes comportamentos.
@@ -114,14 +122,6 @@ O guerreiro atira um pequeno jarro de óleo no inimigo e com uma tocha queima o 
 Um Vampiro apareceu!
 O guerreiro atira flechas envenanadas com veneno de alho que derrotam facilmente o inimigo
 ```
-## Diagrama de classe
-
-<p align="center">
-  <a href="https://github.com/SamuelModesto">
-      <img alt="Minerva" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/strategy.png" />
-  </a>
-</p>
-
 
 ## Quando Usar
 - Quando muitas classes relacionadas diferem apenas em seu comportamento. As estratégias fornecem uma maneira de configurar uma classe com um dos muitos comportamentos
