@@ -12,8 +12,9 @@
   - [Cenário](#Cenário-De-Aplicação)
   - [Resumo](#Resumo)
   - [Wikipedia](#Wikipedia)
+  - [Diagrama de Classe](#Diagrama-de-Classe)
   - [Exemplo de Código](#Exemplo-de-código)
-- [Diagrama de Classe](#Diagrama-de-Classe)
+
 
 - [Quando Usar](#Quando-Usar)
 - [Créditos](#Créditos)
@@ -30,6 +31,14 @@ A Rainha Daenerys (Game Of Thrones) escreve ordens em um pergaminho para o coman
 Esse padrão ajuda a construir uma cadeia de objetos. Uma solicitação entra de um lado e continua indo de um objeto para outro até encontrar um manipulador adequado.
 ### Wikipedia
 No projeto orientado a objetos, o padrão de cadeia de responsabilidade é um padrão de projeto comportamental que consiste em uma fonte de objetos de comando e uma série de objetos de processamento. Cada objeto de processamento contém uma lógica que define os tipos de objetos de comando que ele pode manipular, o restante é passado para o próximo objeto de processamento na cadeia.
+
+## Diagrama de classe
+<p align="center">
+  <a href="https://github.com/SamuelModesto">
+      <img alt="chain-of-responsability" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/chain-of-responsability.png" />
+  </a>
+</p>
+
 ### Exemplo de código
 Primeiramente para este exemplo deve ser criado os enums referente a cada acao que podera ser ordenada aos soldados.
 ```java
@@ -215,14 +224,6 @@ Oficial de exercito cumprindo a ordem de levar os prisioneiros para a cela.
 Comandante cumprindo a ordem de atacar.
 soldado cumprindo a ordem de cobrar os impostos.
 ```
-
-
-## Diagrama de classe
-<p align="center">
-  <a href="https://github.com/SamuelModesto">
-      <img alt="chain-of-responsability" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/chain-of-responsability.png" />
-  </a>
-</p>
 
 ## Quando Usar
   - Mais de um objeto pode manipular uma solicitação e o manipulador não é conhecido. O manipulador deve ser verificado automaticamente.
