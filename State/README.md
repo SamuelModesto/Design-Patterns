@@ -13,9 +13,8 @@
   - [Cenário](#Cenário-De-Aplicação)
   - [Resumo](#Resumo)
   - [Wikipedia](#Wikipedia)
+  - [Diagrama de Classe](#Diagrama-de-Classe)
   - [Exemplo de Código](#Exemplo-de-código)
-- [Diagrama de Classe](#Diagrama-de-Classe)
-
 - [Quando Usar](#Quando-Usar)
 - [Créditos](#Créditos)
 - [Licença](#Licença)
@@ -37,6 +36,12 @@ Em uma calculadora de desconto de uma loja virtual, o pedido tem alguns estados 
  
 ### Wikipedia
 Em certas ocasiões, quando o contexto em que está a desenvolver requer um objeto que possua comportamentos diferentes dependendo de qual estado se encontra, é difícil manejar a mudança de comportamento e os estados desse objeto, tudo dentro do mesmo bloco de código. O padrão State propõe uma solução para esta complicação, criando basicamente, um objeto para cada estado possível do objeto que o chama.
+
+### Diagrama de classe
+
+<p align="center">
+  <img alt="state" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/state.jpeg" />
+</p>
 
 ### Exemplo de código
 Primeiro implementamos a classe de contexto que possui os estados, nesse caso é a classe que representa um pedido. Essa classe é responsável por invocar um método que verifica com base no estado do pedido, se aquele pedido tem desconto ou não.
@@ -216,13 +221,6 @@ O valor do pedido com desconto é 882.00
 Pedido Finalizado
 O valor do pedido com desconto é 882.00
 ```
-
-## Diagrama de classe
-
-<p align="center">
-  <img alt="state" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/state.jpeg" />
-</p>
-
 
 ## Quando Usar
 - Quando você tem um objeto que se comporta de maneira diferente dependendo do seu estado atual e quando o código estado específico muda com frequência.
