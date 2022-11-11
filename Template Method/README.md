@@ -14,8 +14,9 @@
   - [Cenário](#Cenário-De-Aplicação)
   - [Resumo](#Resumo)
   - [Wikipedia](#Wikipedia)
+  - [Diagrama de Classe](#Diagrama-de-Classe)
   - [Exemplo de Código](#Exemplo-de-código)
-- [Diagrama de Classe](#Diagrama-de-Classe)
+
 
 - [Quando Usar](#Quando-Usar)
 - [Créditos](#Créditos)
@@ -40,6 +41,13 @@ O padrão Template Method descreve as etapas gerais em uma classe pai e permite 
 
 ### Wikipedia
 O método template é um método em uma superclasse, geralmente uma superclasse abstrata, e define o esqueleto de uma operação em termos de várias etapas de alto nível. Essas etapas são implementadas por métodos auxiliares adicionais na mesma classe que o método de modelo .
+
+### Diagrama de classe
+<p align="center">
+  <a href="https://github.com/SamuelModesto">
+      <img alt="template-method" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/template-method.png" />
+  </a>
+</p>
 
 ### Exemplo de código
 
@@ -205,14 +213,6 @@ Nescafé adicionado
    \             /'
     `-.._____..-'
 ```
-
-## Diagrama de classe
-<p align="center">
-  <a href="https://github.com/SamuelModesto">
-      <img alt="template-method" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/template-method.png" />
-  </a>
-</p>
-
 
 ## Quando Usar
 - Quando precisamos que as subclasses estendam apenas etapas particulares de um algoritmo, mas não todo o algoritmo e sua estrutura.
