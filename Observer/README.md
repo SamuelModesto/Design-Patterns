@@ -9,8 +9,17 @@
 ## Conteúdo
 
 - [Propósito](#Propósito)
+
+   Garantir que objetos que dependem de outro objeto percebam as mudanças naquele objeto da qual dependem.
+  
 - [Explicação](#Explicação)
+
+  Esse padrão de projeto de software define uma dependência um-para-muitos entre objetos de modo que quando um objeto muda o estado, todos seus dependentes são       notificados e atualizados automaticamente. 
+  
   - [Cenário](#Cenário-De-Aplicação)
+  
+    Em um cenário de cadastro de clientes, precisamos executar algumas ações no momento em que um cliente é cadastro, essas ações podem ser salvar no banco de           dados, enviar email, enviar SMS e assim por diante. Para isso podemos usar esse padrão para que quando o método de cadastrar usuário for chamado, os demais         objetos que estão observando possam ser notificados para executar uma determinada tarefa.
+    
   - [Resumo](#Resumo)
   - [Wikipedia](#Wikipedia)
   - [Exemplo de Código](#Exemplo-de-código)
