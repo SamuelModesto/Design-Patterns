@@ -8,18 +8,9 @@
 
 ## Conteúdo
 
-- [Propósito](#Propósito)
-
-   Garantir que objetos que dependem de outro objeto percebam as mudanças naquele objeto da qual dependem.
-  
-- [Explicação](#Explicação)
-
-  Esse padrão de projeto de software define uma dependência um-para-muitos entre objetos de modo que quando um objeto muda o estado, todos seus dependentes são       notificados e atualizados automaticamente. 
-  
-  - [Cenário](#Cenário-De-Aplicação)
-  
-    Em um cenário de cadastro de clientes, precisamos executar algumas ações no momento em que um cliente é cadastro, essas ações podem ser salvar no banco de           dados, enviar email, enviar SMS e assim por diante. Para isso podemos usar esse padrão para que quando o método de cadastrar usuário for chamado, os demais         objetos que estão observando possam ser notificados para executar uma determinada tarefa.
-    
+- [Propósito](#Propósito)  
+- [Explicação](#Explicação)  
+  - [Cenário](#Cenário-De-Aplicação)    
   - [Resumo](#Resumo)
   - [Wikipedia](#Wikipedia)
   - [Exemplo de Código](#Exemplo-de-código)
@@ -35,13 +26,27 @@
 |:-----------| :----------- | :--------- |
 | `Observer` |  Comportamental | Gang Of Four (GOF)|
 
+Garantir que objetos que dependem de outro objeto percebam as mudanças naquele objeto da qual dependem.
+
 
 ## Explicação
 ### Cenário de aplicação
+Em um cenário de cadastro de clientes, precisamos executar algumas ações no momento em que um cliente é cadastro, essas ações podem ser salvar no banco de           dados, enviar email, enviar SMS e assim por diante. Para isso podemos usar esse padrão para que quando o método de cadastrar usuário for chamado, os demais         objetos que estão observando possam ser notificados para executar uma determinada tarefa.
+
 
 ### Resumo
+Permite que objetos interessados sejam avisados da mudança de estado ou outros eventos ocorrendo num outro objeto.
  
 ### Wikipedia
+Esse padrão de projeto de software define uma dependência um-para-muitos entre objetos de modo que quando um objeto muda o estado, todos seus dependentes são       notificados e atualizados automaticamente. 
+
+## Diagrama de classe
+
+[//]: # (<p align="center">)
+
+[//]: # (  <img alt="state" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/state.jpeg" />)
+
+[//]: # (</p>)
 
 ### Exemplo de código
 ```java 
@@ -89,14 +94,6 @@ public class Pedido {
 
 
 ```
-
-## Diagrama de classe
-
-[//]: # (<p align="center">)
-
-[//]: # (  <img alt="state" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/state.jpeg" />)
-
-[//]: # (</p>)
 
 ## Quando Usar
 
