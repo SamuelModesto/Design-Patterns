@@ -35,7 +35,7 @@ No projeto orientado a objetos, o padrão de cadeia de responsabilidade é um pa
 ## Diagrama de classe
 <p align="center">
   <a href="https://github.com/SamuelModesto">
-      <img alt="chain-of-responsability" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/chain-of-responsability.png" />
+      <img alt="chain-of-responsability" src="https://github.com/SamuelModesto/Assets/blob/master/Imagens%20Java-Design-Patterns/chain-of-responsability.png" />
   </a>
 </p>
 
