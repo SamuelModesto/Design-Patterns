@@ -47,7 +47,7 @@ O padrão é aplicado em situações em que muitas classes se relacionam e difer
 ### Diagrama de classe
 <p align="center">
   <a href="https://github.com/SamuelModesto">
-      <img alt="Minerva" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/strategy.png" />
+      <img alt="Strategy" src="https://github.com/SamuelModesto/Assets/blob/master/Imagens%20Java-Design-Patterns/strategy.png" />
   </a>
 </p>
 
