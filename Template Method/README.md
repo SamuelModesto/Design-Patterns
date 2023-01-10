@@ -45,7 +45,7 @@ O método template é um método em uma superclasse, geralmente uma superclasse 
 ### Diagrama de classe
 <p align="center">
   <a href="https://github.com/SamuelModesto">
-      <img alt="template-method" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/template-method.png" />
+      <img alt="template-method" src="https://github.com/SamuelModesto/Assets/blob/master/Imagens%20Java-Design-Patterns/template-method.png" />
   </a>
 </p>
 
