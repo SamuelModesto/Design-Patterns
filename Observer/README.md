@@ -43,7 +43,7 @@ Esse padrão de projeto de software define uma dependência um-para-muitos entre
 ## Diagrama de classe
 
 <p align="center">
-  <img alt="state" src="https://github.com/SamuelModesto/Assets/blob/master/Imagens%20Minerva/observer.jpeg" />
+  <img alt="state" src="https://github.com/SamuelModesto/Assets/blob/master/Imagens%20Java-Design-Patterns/observer.jpeg" />
 </p>
 
 ### Exemplo de código
