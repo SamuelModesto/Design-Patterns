@@ -40,7 +40,7 @@ Em certas ocasiões, quando o contexto em que está a desenvolver requer um obje
 ### Diagrama de classe
 
 <p align="center">
-  <img alt="state" src="https://github.com/SamuelModesto/Imagens/blob/master/Imagens%20Minerva/state.jpeg" />
+  <img alt="state" src="https://github.com/SamuelModesto/Assets/blob/master/Imagens%20Java-Design-Patterns/state.jpeg" />
 </p>
 
 ### Exemplo de código
