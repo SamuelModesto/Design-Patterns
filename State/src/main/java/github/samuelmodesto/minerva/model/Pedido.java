@@ -10,8 +10,13 @@ public class Pedido {
 
     public void verificarDescontosDoPedido() {
         BigDecimal valorDesconto = this.status.calcularDesconto(this);
-        valorPedido = this.valorPedido.subtract(valorDesconto).setScale(2, RoundingMode.HALF_UP);
+        valorPedido = this.valorPedido.subtract(valorDesconto);
+        arredondarValorPedido();
         System.out.println("O valor do pedido com desconto é " + valorPedido);
+    }
+
+    private void arredondarValorPedido() {
+        this.valorPedido = this.valorPedido.setScale(2, RoundingMode.HALF_UP);
     }
 
     public Pedido(BigDecimal valorPedido) {
