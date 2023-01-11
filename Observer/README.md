@@ -47,53 +47,109 @@ Esse padrão de projeto de software define uma dependência um-para-muitos entre
 </p>
 
 ### Exemplo de código
+
+Para este exemplo criamos uma interface com o metodo ``` notificar() ``` que recebe uma entidade Cliente.
+
 ```java 
-package github.samuelmodesto.minerva.model;
+public interface FinalizacaoDeCadastro {
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-
-public class Pedido {
-
-    private BigDecimal valorPedido;
-    private StatusPedido status;
-
-    public void verificarDescontosDoPedido() {
-        BigDecimal valorDesconto = this.status.calcularDesconto(this);
-        valorPedido = this.valorPedido.subtract(valorDesconto).setScale(2, RoundingMode.HALF_UP);
-        System.out.println("O valor do pedido com desconto é " + valorPedido);
-    }
-
-    public Pedido(BigDecimal valorPedido) {
-        this.valorPedido = valorPedido;
-        this.status = new Analise();
-    }
-
-    public BigDecimal getValorPedido() {
-        return valorPedido;
-    }
-
-    public void setStatus(StatusPedido status) {
-        this.status = status;
-    }
-
-    public void aprovar() {
-        status.aprovarPedido(this);
-    }
-
-    public void reprovar() {
-        status.reprovarPedido(this);
-    }
-
-    public void finalizar() {
-        status.finalizarPedido(this);
-    }
+    void notificar(Cliente cliente);
 }
-
 
 ```
 
+```java
+
+Entidade Cliente
+public class Cliente {
+
+    private String nome;
+    private String email;
+    private String numCel;
+    //Getters, Setters e construtor 
+}
+```
+
+Após isso, para cada ação que queremos tomar devemos criar uma classe, essas classes são chamadas de subscribers pois são elas que vão receber
+a notificação da mudança de estado de um objeto.
+```java 
+public class EnviarEmail implements FinalizacaoDeCadastro {
+    @Override
+    public void notificar(Cliente cliente) {
+        System.out.println("Enviando email para o novo cliente: "
+                +cliente.getNome() + ", e-mail: "
+                + cliente.getEmail());
+    }
+}
+```
+
+```java 
+public class EnviarSms implements FinalizacaoDeCadastro {
+    @Override
+    public void notificar(Cliente cliente) {
+        System.out.println("Enviando SMS para o novo cliente: "
+                +cliente.getNome() + ", celular: "
+                + cliente.getNumCel());
+    }
+}
+```
+
+```java
+public class SalvarNoBanco implements FinalizacaoDeCadastro {
+    @Override
+    public void notificar(Cliente cliente) {
+        System.out.println("Salvando cliente no banco de dados.");
+    }
+}
+```
+Por fim implementamos a classe CadastroService, essa classe é chamada de Publisher pois é ela quem dispara as mensagens para os subscribers.
+Note que implementamos uma lista do tipo da interface e percorremos a lista sendo que para cada elemento na minha lista eu devo chamar o método ```notificar()```.
+
+```java 
+public class CadastroService {
+
+    private List<FinalizacaoDeCadastro> finalizacoesDeCadastro;
+
+    public CadastroService(List<FinalizacaoDeCadastro> finalizacoesDeCadastro) {
+        this.finalizacoesDeCadastro = finalizacoesDeCadastro;
+    }
+
+    public void finalizarCadastroDoCliente(Cliente cliente){
+        this.finalizacoesDeCadastro.forEach(f -> f.notificar(cliente));
+    }
+}
+```
+Na classe de teste ou classe que vai fazer o uso, devemos instanciar os objetos subscribers na ordem em que queremos que sejam notificados.
+```java 
+public class App {
+    public static void main(String[] args) {
+        Cliente cliente = new Cliente(
+                "Samuel",
+                "samuel@samuel.com",
+                "55 0000-0000");
+
+        List<FinalizacaoDeCadastro> finalizacoes = Arrays.asList(
+                new SalvarNoBanco(),
+                new EnviarEmail(),
+                new EnviarSms()
+        );
+        CadastroService cadastroService = new CadastroService(finalizacoes);
+
+        cadastroService.finalizarCadastroDoCliente(cliente);
+    }
+}
+```
+
+Saída no console:
+```
+Salvando cliente no banco de dados.
+Enviando email para o novo cliente: Samuel, e-mail: samuel@samuel.com
+Enviando SMS para o novo cliente: Samuel, celular: 55 0000-0000
+```
+
 ## Quando Usar
+- Quando mudanças as no estado de um objeto precisar mudar outros objetos, e o atual conjunto de objetos é desconhecido de antemão ou muda dinamicamente.
+- Quando algum objeto da aplicação precisam observar outros objetos.
 
 ## Como Executar
  1. Baixe o projeto.
